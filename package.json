@@ -1,0 +1,46 @@
+{
+  "name": "react-svg-circle-chart",
+  "version": "1.0.0",
+  "description": "A simple React SVG Circle Chart",
+  "main": "build/CircleChart.js",
+  "module": "build/index.es.js",
+  "jsnext:main": "build/index.es.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonoirwinrsa/react-svg-circle-chart.git"
+  },
+  "keywords": [
+    "react",
+    "svg",
+    "cicrle",
+    "chart"
+  ],
+  "author": "Jonathan Irwin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jonoirwinrsa/react-svg-circle-chart/issues"
+  },
+  "homepage": "https://github.com/jonoirwinrsa/react-svg-circle-chart#readme",
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-spring": "^8.0.27"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.15",
+    "@types/react-dom": "^16.9.4",
+    "react-dom": "^16.12.0",
+    "rollup": "^1.27.8",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-typescript2": "^0.25.3",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "react-spring": "^8.0.27"
+  }
+}
