@@ -10,8 +10,8 @@
   <a href="https://github.com/jonoirwinrsa/react-svg-circle-chart/blob/master/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/jonoirwinrsa/react-svg-circle-chart" />
   </a>
-  <a href="https://twitter.com/https:\/\/twitter.com\/jonoirwin" target="_blank">
-    <img alt="Twitter: https:\/\/twitter.com\/jonoirwin" src="https://img.shields.io/twitter/follow/https:\/\/twitter.com\/jonoirwin.svg?style=social" />
+  <a href="https://twitter.com/jonoirwin" target="_blank">
+    <img alt="Twitter: jonoirwin" src="https://img.shields.io/twitter/follow/jonoirwin.svg?style=social" />
   </a>
 </p>
 
