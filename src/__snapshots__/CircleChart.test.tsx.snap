@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CircleChart [snapshot] is loaded with default props 1`] = `
+<div
+  style="position: absolute;"
+>
+  <svg
+    stroke="#E2E449"
+    stroke-dasharray="458.6725274241098 999"
+    style="overflow: visible; position: absolute; stroke-linecap: round; fill: none; stroke-width: 30; transform: rotate(-90deg); transition: all 1s ease-in-out; margin-top: -200px; height: 200px; width: 200px;"
+  >
+    <circle
+      cx="0"
+      cy="0"
+      r="100"
+    />
+  </svg>
+  <svg
+    stroke="#EC4C47"
+    stroke-dasharray="314.1592653589793 999"
+    style="overflow: visible; position: absolute; stroke-linecap: round; fill: none; stroke-width: 30; transform: rotate(-90deg); transition: all 1s ease-in-out; margin-top: -200px; height: 200px; width: 200px;"
+  >
+    <circle
+      cx="0"
+      cy="0"
+      r="100"
+    />
+  </svg>
+  <svg
+    stroke="#47B881"
+    stroke-dasharray="282.7433388230814 999"
+    style="overflow: visible; position: absolute; stroke-linecap: round; fill: none; stroke-width: 30; transform: rotate(-90deg); transition: all 1s ease-in-out; margin-top: -200px; height: 200px; width: 200px;"
+  >
+    <circle
+      cx="0"
+      cy="0"
+      r="100"
+    />
+  </svg>
+</div>
+`;
