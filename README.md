@@ -22,13 +22,27 @@
 ## Install
 
 ```sh
-yarn
+yarn add react-svg-circle-chart
 ```
 
 ## Usage
 
 ```sh
-cd demo && yarn start
+import { CircleChart } from 'react-svg-circle-chart'
+
+const values = [
+    { angle: 45, color: '#47B881' },
+    { angle: 50, color: '#EC4C47' },
+    { angle: 73, color: '#E2E449' }
+]
+
+<CircleChart values={values} size={220} radius={90} />
+```
+
+## Demo
+
+```sh
+cd demo && yarn && yarn start
 ```
 
 ## Run tests
