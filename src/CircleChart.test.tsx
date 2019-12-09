@@ -1,6 +1,6 @@
 import { render } from '@testing-library/react';
 import * as React from 'react';
-import CircleChart from '../build';
+import CircleChart from './index';
 
 const values = [
   {angle: 45, color: '#47B881'},
