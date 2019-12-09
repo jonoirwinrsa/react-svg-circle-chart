@@ -27,7 +27,7 @@ yarn add react-svg-circle-chart
 
 ## Usage
 
-```sh
+```jsx
 import { CircleChart } from 'react-svg-circle-chart'
 
 const values = [
@@ -39,7 +39,7 @@ const values = [
 <CircleChart values={values} size={220} radius={90} />
 ```
 
-## Demo
+## Run Demo
 
 ```sh
 cd demo && yarn && yarn start
