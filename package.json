@@ -26,8 +26,7 @@
   },
   "homepage": "https://github.com/jonoirwinrsa/react-svg-circle-chart#readme",
   "peerDependencies": {
-    "react": "^16.12.0",
-    "react-spring": "^8.0.27"
+    "react": "^16.12.0"
   },
   "devDependencies": {
     "@types/react": "^16.9.15",
@@ -39,8 +38,5 @@
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-typescript2": "^0.25.3",
     "typescript": "^3.7.3"
-  },
-  "dependencies": {
-    "react-spring": "^8.0.27"
   }
 }

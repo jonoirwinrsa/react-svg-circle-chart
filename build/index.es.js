@@ -1,6 +1,4 @@
 import { createElement } from 'react';
-import { config, animated } from 'react-spring';
-import { Spring } from 'react-spring/renderprops-universal';
 
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation. All rights reserved.
@@ -33,27 +31,36 @@ var styles = {
     position: 'absolute',
     strokeLinecap: 'round',
     fill: 'none',
-    strokeWidth: '30'
+    strokeWidth: '30',
+    transform: 'rotate(-90deg)',
+    transition: ' all 1s ease-in-out'
 };
-function describeArc(cx, cy, radius, max) {
-    var d = " M " + (cx + radius) + " " + cy;
-    for (var angle = 0; angle < max; angle += 5) {
-        var radians = angle * (Math.PI / 180); // convert degree to radians
-        var x = cx + Math.cos(radians) * radius;
-        var y = cy + Math.sin(radians) * radius;
-        d += " L " + x + " " + y;
+/**
+ * Returns the end dash array value for each section of the chart
+ * @param radius - chart radius
+ * @param percentage - complete percentage
+ */
+function createDasharray(radius, percentage) {
+    if (!percentage) {
+        return '0 999';
     }
-    return d;
+    var circumference = 2 * radius * Math.PI;
+    var percentToDraw = (percentage * circumference) / 100;
+    return percentToDraw + " 999";
 }
+/**
+ * Returns a simple Circle Chart using an SVG
+ * @param values - array of colors and percentages
+ * @param size - width and height of container
+ * @param radius - radius of the chart
+ * @constructor
+ */
 var CircleChart = function (_a) {
-    var values = _a.values, _b = _a.size, size = _b === void 0 ? 200 : _b;
-    // Sort so they are all visible
+    var values = _a.values, _b = _a.size, size = _b === void 0 ? 200 : _b, _c = _a.radius, radius = _c === void 0 ? 100 : _c;
+    // Sort values so that all sections will be visible
     values.sort(function (a, b) { return b.angle - a.angle; });
-    return (createElement("div", { style: { position: 'absolute' } },
-        createElement("svg", { style: __assign(__assign({}, styles), { marginTop: "-" + size + "px", height: size + "px", width: size + "px" }), transform: 'rotate(270)' }, values.map(function (item) { return (createElement(Spring, { key: item.color, from: { x: 100 }, to: { x: 0 }, config: config.slow, delay: 1000 }, function (_a) {
-            var x = _a.x;
-            return (createElement(animated.path, { stroke: item.color, strokeDasharray: 100, strokeDashoffset: x, pathLength: '100', d: describeArc(0, 0, 94, item.angle) }));
-        })); }))));
+    return (createElement("div", { style: { position: 'absolute' } }, values.map(function (item) { return (createElement("svg", { key: item.color, strokeDasharray: createDasharray(radius, item.angle), style: __assign(__assign({}, styles), { marginTop: "-" + size + "px", height: size + "px", width: size + "px" }), stroke: item.color },
+        createElement("circle", { cx: '0', cy: '0', r: radius }))); })));
 };
 
 export default CircleChart;
