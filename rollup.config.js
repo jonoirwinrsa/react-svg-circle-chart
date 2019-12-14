@@ -21,8 +21,9 @@ export default {
       sourcemap: true
     },
     {
-      file: 'demo/src/CircleChart.js',
-      format: 'cjs',
+      file: pkg.umd,
+      name: 'CircleChart',
+      format: 'umd',
       exports: 'named',
       sourcemap: false
     }

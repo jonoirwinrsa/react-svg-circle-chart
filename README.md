@@ -42,7 +42,7 @@ const values = [
 ## Run Demo
 
 ```sh
-cd demo && yarn && yarn start
+open demo/index.html in your browser
 ```
 
 ## Run tests

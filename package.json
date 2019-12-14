@@ -4,6 +4,7 @@
   "description": "A simple React SVG Circle Chart",
   "main": "build/index.js",
   "module": "build/index.es.js",
+  "umd": "build/index.umd.js",
   "jsnext:main": "build/index.es.js",
   "scripts": {
     "build": "rm -rf build && rollup -c",
